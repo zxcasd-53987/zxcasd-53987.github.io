@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>エントリポまとめてエントリー</title>
+</head>
+<body>
+  <h1>楽天市場キャンペーンにまとめてエントリー！</h1>
+  <button onclick="openAll()">レッツゴー！</button>
+
+  <script>
+    function openAll() {
+      const urls = [
+        "https://event.rakuten.co.jp/guide/freeshippingline/campaign/",
+        "https://toolbar.rakuten.co.jp/intro/campaign/bookscollabo/",
+        "https://event.rakuten.co.jp/campaign/card/pointday/"
+        // ←今後追加可能
+      ];
+      urls.forEach(url => window.open(url, "_blank"));
+    }
+  </script>
+</body>
+</html>
